@@ -1,0 +1,41 @@
+/* *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} */
+
+
+.education-card{
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+    width: 50%;
+    text-align: center;
+    margin-left: 50px;
+    position: relative;
+    padding-left: 40px;
+}
+
+.education-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-left: 5px solid black;
+}
+
+.education-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -0.82%;
+    height:20%;
+    border: 5px solid black;
+    width: 2px;
+    border-radius: 999px;
+    z-index: 1;
+    background-color: black;
+}
+
